@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: baseline;
+  background-color: rgb(5, 5, 118);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: baseline;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header h1 {
+  color: white;
+}
+
+.header p {
+  margin-left: 1rem;
+  color: white;
+}
+
+.contact a {
+  font-size: 2em;
+}
+
+.mainSection {
+  background-color: aqua;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.formDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgb(5, 5, 118);
+  height: fit-content;
+  padding: 2rem 1rem;
+}
+
+.form input {
+  width: 100%;
+}
+
+.form textarea {
+  width: 100%;
+}
+
+.mainSectionText {
+  width: 50%;
+}
+
+.form h1 {
   color: white;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.formSeparator {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  height: 2rem;
+  margin: 0.5rem 0;
+}
+
+.submitButton {
+  color: white;
+  background-color: rgb(71, 150, 240);
+  height: 3rem;
 }
